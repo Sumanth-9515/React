@@ -1,0 +1,149 @@
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;      /* Allows cards to wrap onto multiple rows if needed */
+  justify-content: center; /* Centers cards horizontally; change to flex-start if desired */
+  gap: 20px;            /* Adds space between the cards */
+  padding: 20px;        /* Optional: adds padding around the container */
+}
+
+/* Card styling (as defined previously) */
+.card {
+  width: 300px;              
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h1 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1em;
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.card-content b {
+  font-size: 1.2em;
+  color: #000;
+}
+
+.card-content .category {
+  font-size: 0.9em;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 10px 20px;     /* Padding around the navbar */
+  }
+  
+  /* Navigation menu styling */
+  .nav-menu {
+    list-style: none;       /* Remove default list bullets */
+    display: flex;          /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual navigation items */
+  .nav-item {
+    margin: 0 15px;         /* Spacing between each nav item */
+  }
+  
+  /* Navigation links styling */
+  .nav-link {
+    text-decoration: none;  /* Remove underline */
+    color: #fff;            /* White text color */
+    font-size: 26px;        /* Adjust font size as needed */
+    padding: 8px 62px;      /* Padding for a larger click area */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .nav-link:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+    border-radius: 4px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .nav-menu {
+      flex-direction: column;    /* Stack items vertically on small screens */
+      align-items: center;
+    }
+    
+    .nav-item {
+      margin: 10px 0;            /* Adjust spacing for vertical layout */
+    }
+  }
+  
+
+  /* Footer container styling */
+.footer {
+    background-color: #333;       /* Dark background for contrast */
+    color: #fff;                  /* White text color */
+    padding: 20px 10px;           /* Padding around the footer */
+    text-align: center;           /* Center the text */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the footer links container */
+  .footer-links {
+    margin-bottom: 15px;          /* Space between the links and copyright */
+  }
+  
+  /* Individual link styling */
+  .footer-links a {
+    color: #fff;                  /* White link color */
+    text-decoration: none;        /* Remove default underline */
+    margin: 0 10px;               /* Spacing between links */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .footer-links a:hover {
+    color: #ddd;                  /* Lighter shade on hover */
+  }
+  
+  /* Styling for the footer text */
+  .footer-text {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;             /* Stack links vertically on small screens */
+      margin: 10px 0;
+    }
+  }
+  
